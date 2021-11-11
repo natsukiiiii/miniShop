@@ -1,5 +1,6 @@
 <?php
 $pro_id = $_POST['pro_code'];
+// !? pro_codeはどこから出てきた？
 
 if(isset($_POST['add']) == true){
 

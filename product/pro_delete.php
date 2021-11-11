@@ -17,10 +17,14 @@
 
         $sql = 'select name, image from product where id=?';
         $stmt = $dbh->prepare($sql);
+        // !? $dbhはcommon.phpでPDOでデータに接続していた。
+        // prepareメソッド自体はデータベースに送信しようとするSQL文の準備をしているだけです。
         $data[] = $pro_id;
         $stmt->execute($data);
-
+        // 実際にSQL文をデータベースに送るにはPDOStatementクラスで用意されている「execute」メソッドを使います。
         $rec = $stmt->fetch(PDO::FETCH_ASSOC);
+        // フェッチモードとは、PDOでデータベースからデータを取り出した際の「配列の形式を指定するモード」のこと
+        // FETCH_ASSOC：【配列のキー】カラム名のみ
         $pro_name = $rec['name'];
         $pro_image_name = $rec['image'];
 

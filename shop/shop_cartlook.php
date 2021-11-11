@@ -57,10 +57,10 @@
 
     <?php for($i = 0; $i< $pro_count; $i++){ ?>
         <div style="display: grid;">
-        ・<?php echo $pro_name[$i]; ?>:
-        ・<?php echo $pro_price[$i]; ?>円:
+        <?php echo $pro_name[$i]; ?>:
+        <?php echo $pro_price[$i]; ?>円:
 
-        ・<?php echo $pro_image[$i]; ?>:
+        <?php echo $pro_image[$i]; ?>:
         </div>
     <?php } ?>
     <a href="shop_cartclear.php">カートを空にする</a><br>

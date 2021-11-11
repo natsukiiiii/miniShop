@@ -17,6 +17,8 @@ if($staff_name == ''){
       } else {
         echo 'あなたのお名前 : ' . $staff_name;
         $staff_pass = md5($staff_pass1);
+        // md5 : 文字列をハッシュ化することができる関数
+        // ハッシュとは : みられたら困る文字列を、元の文字が推測できないように変換された文字列
       }
 
       if($staff_name == '' || $staff_pass1 == '' || $staff_pass1 !== $staff_pass2){

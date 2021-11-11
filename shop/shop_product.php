@@ -50,6 +50,7 @@
   <br>
   <?php echo $image ?>
   <a href="shop_cartin.php?pro_code=<?php echo $pro_id; ?>">カートに入れる</a>
+  <!-- !? 上記の？は何？連結？ -->
   <br>
   <input type="button" onclick="history.back()" value="戻る">
 

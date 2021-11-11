@@ -14,6 +14,7 @@ function connectDB()
   $user = 'root';
   $password = 'root';
   $dbh = new PDO($dsn, $user, $password);
+//   PDO:PHPでPDOのオブジェクトを生成してデータベースに接続する際に
   $dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
   return $dbh;
 }

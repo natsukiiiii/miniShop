@@ -28,7 +28,7 @@ try{
       $_SESSION['login'] = 1;
       $_SESSION['staff_name'] = $rec['name'];
       header('Location:../product/pro_list.php');
-    //   上記はログインした後の飛び先指定
+    //   上記はログインした後の飛び先を指定
       exit();
     }
 

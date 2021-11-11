@@ -23,6 +23,7 @@ EOD;
         <input type="radio" name="pro_code" value="$rec[id]">
         $rec[name] :$rec[price]円<br>
 EOD;
+                    // !?もしやこのpro_code?
     }
     echo <<<EOD
     <input type="submit" name="add" value="追加">

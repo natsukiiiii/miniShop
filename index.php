@@ -21,13 +21,13 @@ try{
         }
         echo <<<EOD
         <a href="shop/shop_product.php?pro_code=$rec[id]">
-          $rec[name] : $rec[place]円
+          $rec[name] : $rec[price]円
         </a><br>
         EOD;
     }
 
-    echo '<a href="shop/shop_cartlook.php">カート詳細へ</a>';
-    echo '<a href="staff/staff_login.php">ログインする</a>';
+    echo '<a href="shop/shop_cartlook.php">カート詳細へ</a><br>';
+    echo '<a href="staff/staff_login.php">ログインする</a><br>';
 
 }catch(Exception $e){
     echo '何かしらのエラーが発生しています';
